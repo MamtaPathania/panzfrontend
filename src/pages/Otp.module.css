@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #8bc8e4;
+}
+
+.sub_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 50rem;
+    background-color: #f4f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.3rem 3rem rgba(32, 61,127, 0.3);
+    overflow: hidden;
+}
+
+.image_wrapper {
+    width: 50%; /* Full width on all screens */
+}
+
+.form_wrapper {
+    flex: 1;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: flex-start; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap:3rem;
+}
+
+
+
+.img {
+    width: 100%; /* Make image take full width of its container */
+}
+
+.heading {
+    direction: 'flex';
+}
+
+.heading h4 {
+    color: #2955e4;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-family: 'Signika Negative',sans-serif;
+    direction: 'flex';
+}
+
+.input_container {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .sub_container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Allow container height to adjust based on content */
+    }
+    .form_wrapper {
+        flex: 1;
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Arrange items in a column */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        gap:1rem;
+        margin-bottom: 4rem;
+    }
+    
+    .image_wrapper {
+        width: 100%; /* Full width on all screens */
+    }
+    .input_container {
+        width: 80%;
+    }
+}
+
+.input_box {
+    width: 100%;
+    font-size: 3rem;
+    height: 6rem;
+}
+
+.input_container input {
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.btn {
+    width: 20rem;
+    height: 4.5rem;
+    border: none;
+    border-radius: 5rem;
+    background-color: #407bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    box-shadow: 0 0.5rem 1rem rgba(64, 123,255, 0.4);
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(.2rem);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
