@@ -171,25 +171,3 @@ const OtpPage = () => {
 export default OtpPage;
 
 
-
-// const OtpPage = () => {
-//   const submitHandler = async () => {
-//     // Get extref from localStorage
-//     const extref = localStorage.getItem("extref");
-    
-//     // Include extref in the data sent to the backend for OTP verification
-//     const data = {
-//       MSISDN: number,
-//       PIN: otp,
-//       extref: extref,
-//     };
-
-//     // Remaining code...
-//   };
-// };
-
-
-
-
-// const extRef = new URLSearchParams(window.location.search).get("ext_ref"); 
-// ext_ref: extRef,
